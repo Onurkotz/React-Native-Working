@@ -6,12 +6,12 @@ import Styles from './card.style';
 function Card(props) {
   return (
     <View style={Styles.card_main}>
-     <View>
+     
       <Image
         style={Styles.image}
         source={{uri: props.images}}
       />
-      </View>
+      
      
       <Text style={Styles.card_title}>{props.title}</Text>
       

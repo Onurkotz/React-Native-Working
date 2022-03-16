@@ -15,7 +15,7 @@ export default StyleSheet.create({
     flex: 1,
     borderWidth: 1,
     borderRadius: 10,
-    height: Dimensions.get('window').height / 6,
+    height: Dimensions.get('window').height / 4,
     
   },
   card_title: {
