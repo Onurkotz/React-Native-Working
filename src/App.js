@@ -1,6 +1,14 @@
 import React from 'react';
 import Card from './components/card/card';
-import {SafeAreaView, View, Text, StyleSheet, FlatList} from 'react-native';
+import Input from './components/input/input';
+import {
+  SafeAreaView,
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  ScrollView,
+} from 'react-native';
 import products from './product_data.json';
 
 function App() {
@@ -9,6 +17,7 @@ function App() {
       <Text style={Styles.head_text}>patiStore</Text>
 
       <FlatList
+        ListHeaderComponent={() => <Input />}
         numColumns={2}
         keyExtractor={item => item.id.toString()}
         data={products}
@@ -30,7 +39,7 @@ export default App;
 const Styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: 'white',
   },
   head_text: {
     color: 'black',

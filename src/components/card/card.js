@@ -9,7 +9,7 @@ function Card(props) {
      <View>
       <Image
         style={Styles.image}
-        source={{uri: 'https://picsum.photos/200/300'}}
+        source={{uri: props.images}}
       />
       </View>
      
@@ -24,4 +24,4 @@ function Card(props) {
 
 export default Card;
 
-//   '{props.image}'  
+//   '{props.images}'  
