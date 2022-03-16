@@ -37,6 +37,6 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     padding: 5,
     textAlign: 'right',
-    color: 'gray',
+    color: 'red',
   },
 });
